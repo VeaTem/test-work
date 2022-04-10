@@ -1,0 +1,29 @@
+{
+  "name": "start_gulp_v5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "latest",
+    "del": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-concat": "latest",
+    "gulp-csso": "latest",
+    "gulp-fonter": "^0.3.0",
+    "gulp-sass": "latest",
+    "gulp-ttf2woff2": "latest",
+    "gulp-uglify": "latest",
+    "gulp-webp": "latest",
+    "jquery": "latest",
+    "sass": "latest",
+    "slick-carousel": "latest",
+    "through2": "latest"
+  }
+}

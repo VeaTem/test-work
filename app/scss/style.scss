@@ -173,6 +173,7 @@ a[class] {
     position: relative;
     width: 100px;
 
+
     &+.menu__dropdown {
       margin-left: 30px;
     }
@@ -226,13 +227,15 @@ a[class] {
   &__list {
     display: none;
     position: absolute;
-    padding-top: 10px;
+    padding: 10px 0;
     left: 0;
     width: 100%;
     max-width: 100px;
+    z-index: 5;
 
     &-item {
-      padding: 5px 0;
+      background-color: #ececec;
+      padding: 5px;
       overflow: hidden;
       position: relative;
 
@@ -292,6 +295,7 @@ a[class] {
 
 .news {
   margin-bottom: 30px;
+
   &__inner {
     display: flex;
     // align-items: center;
@@ -315,16 +319,19 @@ a[class] {
     line-height: 34px;
     color: #22252E;
   }
+
   &__info {
     &-nameDate {
       display: flex;
       margin-bottom: 10px;
     }
+
     &-date {
       margin-left: 27px;
       color: #889099;
       text-transform: uppercase;
       position: relative;
+
       &::before {
         position: absolute;
         content: "";
@@ -336,21 +343,26 @@ a[class] {
         background-color: #889099;
       }
     }
+
     &-tags {
       font-size: 12px;
       margin-bottom: 10px;
       text-transform: uppercase;
+
       &__link {
         color: #4CB649;
         margin-right: 5px;
+
         &:last-child {
           margin-right: 0;
         }
       }
     }
+
     &-comments {
       margin-left: 25px;
-      position: relative; 
+      position: relative;
+
       &::before {
         position: absolute;
         content: "";
@@ -363,6 +375,55 @@ a[class] {
         background-size: cover;
         width: 12px;
         height: 12px;
+      }
+    }
+  }
+}
+
+.tags {
+  &__inner {
+    background-color: #F7F7F7;
+    padding: 24px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @extend %Roboto-500;
+    text-transform: uppercase;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+
+  }
+
+  &__title {
+    margin-right: 45px;
+  }
+
+  &-list {
+    display: flex;
+    align-items: center;
+
+    &__item {
+      margin-right: 40px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__link {
+      color: #4CB649;
+    }
+  }
+
+  &__contact {
+    &-link {
+      margin-right: 40px;
+
+      &:last-chilgitd {
+        margin-right: 0;
       }
     }
   }

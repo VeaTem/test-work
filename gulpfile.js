@@ -1,4 +1,10 @@
-const { src, dest, watch, parallel, series } = require("gulp");
+const {
+  src,
+  dest,
+  watch,
+  parallel,
+  series
+} = require("gulp");
 const gulpautoprefixer = require("gulp-autoprefixer");
 const browserSync = require("browser-sync").create();
 const scss = require("gulp-sass")(require("sass"));
@@ -26,8 +32,9 @@ function syncBrowser() {
 
 function styles() {
   return src("app/scss/style.scss")
-    .pipe(scss({ outputStyle: "compressed" }).on("error", scss.logError))
-    .pipe(webpcss())
+    .pipe(scss({
+      outputStyle: "compressed"
+    }).on("error", scss.logError))
     .pipe(concat("style.min.css"))
     .pipe(
       gulpautoprefixer({
@@ -45,10 +52,10 @@ function styles() {
 
 function scripts() {
   return src([
-    "node_modules/jquery/dist/jquery.js",
-    "node_modules/slick-carousel/slick/slick.js",
-    "app/js/main.js",
-  ])
+      "node_modules/jquery/dist/jquery.js",
+      "node_modules/slick-carousel/slick/slick.js",
+      "app/js/main.js",
+    ])
     .pipe(concat("main.min.js"))
     .pipe(uglify())
     .pipe(dest("app/js"))
@@ -99,12 +106,12 @@ async function fontsStyle() {
       for (var i = 0; i < fontsFiles.length; i++) {
         let fontFileName = fontsFiles[i].split(".")[0];
         if (newFileOnly !== fontFileName) {
-          let fontName = fontFileName.split("-")[0]
-            ? fontFileName.split("-")[0]
-            : fontFileName;
-          let fontWeight = fontFileName.split("-")[1]
-            ? fontFileName.split("-")[1]
-            : fontFileName;
+          let fontName = fontFileName.split("-")[0] ?
+            fontFileName.split("-")[0] :
+            fontFileName;
+          let fontWeight = fontFileName.split("-")[1] ?
+            fontFileName.split("-")[1] :
+            fontFileName;
           if (fontWeight.toLowerCase() === "thin") {
             fontWeight = 100;
           } else if (
@@ -175,7 +182,7 @@ async function fontsStyle() {
 
 function watching() {
   watch(["app/scss/style.scss"], styles);
-  watch(["app/images/**/*.{png,jpeg,webp,gif,svg}"], images);
+  // watch(["app/images/**/*.{png,jpeg,webp,gif,svg}"], images);
   watch(["app/js/**/*.js", "!app/js/main.min.js"], scripts);
   watch(["app/**/*.html"]).on("change", browserSync.reload);
 }
@@ -191,8 +198,7 @@ function build() {
       "app/js/main.min.js",
       "app/fonts/**/*.woff",
       "app/fonts/**/*.woff2",
-    ],
-    {
+    ], {
       base: "app",
     }
   ).pipe(dest("dist"));

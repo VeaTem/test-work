@@ -32,3 +32,247 @@ html {
 }
 
 //-------------------------------------------------------------
+a[class] {
+  text-decoration: none;
+}
+
+.body {
+  @extend %Roboto-400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #323642;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.big-container {
+  max-width: 1520px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.warning {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #22252E;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s ease;
+
+
+  &__inner {
+    max-width: 1600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #889099;
+  }
+
+  &__main {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__item+.warning__item {
+    margin-left: 35px;
+  }
+
+  &--msg {
+    @extend %Roboto-700;
+    color: #FF8D00;
+    margin-left: 0;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 22px;
+      height: 19px;
+      left: -35px;
+      bottom: 0;
+      border-left: 16px solid transparent;
+      border-right: 16px solid transparent;
+      border-bottom: 22px solid #FF8D00;
+    }
+
+  }
+
+  &--text {
+    color: #889099;
+  }
+
+  &--link {
+    color: #fff;
+  }
+
+
+  &__close {
+    text-transform: uppercase;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    position: relative;
+
+    span {
+      &::before {
+        position: absolute;
+        content: "";
+        width: 14px;
+        height: 2px;
+        background-color: #889099;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 14px;
+        height: 2px;
+        background-color: #889099;
+        top: 50%;
+        right: 50%;
+        transform: translateX(50%) rotate(-45deg);
+      }
+    }
+  }
+}
+
+.header {
+  padding-top: 83px;
+  padding-bottom: 26px;
+  margin-bottom: 20px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  @extend %Roboto-500;
+  letter-spacing: 0.71px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  &__dropdown {
+    position: relative;
+    width: 100px;
+
+    &+.menu__dropdown {
+      margin-left: 30px;
+    }
+
+    &:hover .menu__list {
+      display: block;
+    }
+
+    &-btn {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 5px;
+        right: -15px;
+        top: 0;
+        background-image: url(../images/Icons/dropdown-arrow.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 0.5s ease-out;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 0%;
+        height: 3px;
+        background-color: #4CB649;
+        bottom: -5px;
+        left: 0;
+        transition: all 0.3s ease-out;
+      }
+
+      &:hover::before {
+        width: 115%;
+      }
+
+      &:hover::after {
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  &__nonDropdown::after {
+    display: none;
+  }
+
+  &__list {
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+    left: 0;
+    width: 100%;
+    max-width: 100px;
+
+    &-item {
+      padding: 5px 0;
+      overflow: hidden;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 0%;
+        height: 3px;
+        background-color: #4CB649;
+        bottom: 0;
+        left: 0;
+        transition: all 0.3s ease-out;
+      }
+
+      &:hover::before {
+        width: 115%;
+      }
+    }
+
+    &-link {
+      display: block;
+    }
+  }
+}
+
+.btn {
+  padding: 10.5px;
+  max-width: 205px;
+  border: 1px solid #4CB649;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #4CB649;
+  cursor: pointer;
+  transition: all 0.5s;
+  &-log {
+    margin-right: 10px;
+  }
+
+  &:hover {
+    background-color: #4CB649;
+    color: #fff;
+  }
+}

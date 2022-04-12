@@ -21,9 +21,11 @@
     "gulp-ttf2woff2": "latest",
     "gulp-uglify": "latest",
     "gulp-webp": "latest",
+    "jqcloud2": "^2.0.3",
     "jquery": "latest",
     "sass": "latest",
     "slick-carousel": "latest",
+    "tagcloud": "^1.1.0-1",
     "through2": "latest"
   }
 }

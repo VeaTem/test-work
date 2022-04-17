@@ -181,7 +181,7 @@ async function fontsStyle() {
 //---------------------------------------------------------------------
 
 function watching() {
-  watch(["app/scss/style.scss"], styles);
+  watch(["app/scss/*.scss"], styles);
   // watch(["app/images/**/*.{png,jpeg,webp,gif,svg}"], images);
   watch(["app/js/**/*.js", "!app/js/main.min.js"], scripts);
   watch(["app/**/*.html"]).on("change", browserSync.reload);

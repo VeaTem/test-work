@@ -3,6 +3,7 @@
 @import "vars";
 @import "reset";
 
+
 //-------------------------------------------------------------
 
 html,
@@ -49,7 +50,9 @@ a {
   margin: 0 auto;
   padding: 0 10px;
 }
-
+.burger-menu {
+  display: none;
+}
 .big-container {
   max-width: 1520px;
   padding: 0 10px;
@@ -73,6 +76,7 @@ a {
   &__inner {
     max-width: 1600px;
     width: 100%;
+    padding: 0 10px;
     display: flex;
     justify-content: space-between;
     color: #889099;
@@ -92,7 +96,7 @@ a {
   &--msg {
     @extend %Roboto-700;
     color: #FF8D00;
-    margin-left: 0;
+    padding-left: 35px;
     position: relative;
 
     &::before {
@@ -100,7 +104,7 @@ a {
       content: "";
       width: 22px;
       height: 19px;
-      left: -35px;
+      left: 0;
       bottom: 0;
       border-left: 16px solid transparent;
       border-right: 16px solid transparent;
@@ -152,7 +156,7 @@ a {
 }
 
 .header {
-  padding-top: 83px;
+  padding-top: 95px;
   padding-bottom: 26px;
   margin-bottom: 20px;
 
@@ -300,11 +304,12 @@ a {
 
   &__inner {
     display: flex;
-    // align-items: center;
     border: 1px solid #D7D8D9;
     border-radius: 6px;
   }
-
+&__img {
+  max-width: 600px;
+}
   &__box {
     margin-left: 60px;
     max-width: 467px;
@@ -388,7 +393,7 @@ a {
 
   &__inner {
     background-color: #F7F7F7;
-    padding: 24px 35px;
+    padding: 15px 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -701,7 +706,7 @@ a {
   &__content {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 90px;
+    margin-bottom: 51px;
   }
 
   &__box {
@@ -863,7 +868,7 @@ a {
      font-size: 12px;
      color: #889099;
      &--descr {
-       margin-bottom: 50px;
+       margin-bottom: 15px;
        font-size: 14px;
      }
 
@@ -897,3 +902,5 @@ a {
     }
   }
 }
+
+@import "media";

@@ -17,7 +17,8 @@
 
             <div class="warning__main">
                 <p class="warning__item warning--msg">You are not protected</p>
-                <p class="warning__item warning--text">Your IP Address: <span class="warning__ip">107.3.176.194</span>
+                <p class="warning__item warning--text">
+                    Your IP Address: <span class="warning__ip">107.3.176.194</span>
                 </p>
                 <p class="warning__item warning--text">Your ISP: <span class="warning__isp">Comcast Cable</span></p>
                 <a class="warning__item warning--link" href="#">Learn More › </a>
@@ -28,16 +29,17 @@
             </div>
         </div>
     </div>
-    <header class="header">
+     <header class="header">
         <div class="big-container">
             <div class="header__inner">
+                <img class="burger-menu" onclick="openMenu()" src="images/Icons/burger.svg" alt="menu">
                 <a class="header__logo-link" href="#">
                     <img class="logo" src="images/logo.svg" alt="Logo">
                 </a>
 
-                <nav class="menu">
+                <nav class="menu" id="menu">
                     <div class="menu__dropdown">
-                        <a class="menu__dropdown-btn" href="#">WHY Us</a>
+                        <a class="menu__dropdown-btn" href="https://html5css.ru/edithtm/index.php" target="_blank">WHY Us</a>
                         <ul class="menu__list">
                             <li class="menu__list-item">
                                 <a class="menu__list-link" href="#">Lorem</a>
@@ -110,7 +112,7 @@
             </div>
 
         </div>
-    </header>
+    </header> 
 
     <main class="main">
         <section class="news">
@@ -148,7 +150,7 @@
             </div>
         </section>
 
-        <div class="tags">
+         <div class="tags">
             <div class="container">
                 <div class="tags__inner">
                     <div class="tags__box">
@@ -460,7 +462,7 @@
         </section>
 
 
-        <section class="offers">
+      <section class="offers">
             <div class="container">
                 <div class="offers__inner">
                     <h2 class="offers__title">Sign up today – 7 day money back guarantee</h2>
@@ -513,15 +515,17 @@
                             <img class="payment__img" src="images/Icons/Amazon-Pay-logo.webp" alt="Payment logo">
                         </div>
                     </div>
-                    <a class="offers__link" href="#">How to pay anonymously</a>
-                    <a class="offers__link" href="#">REDEEM GIFT CARD</a>
+                    <div class="offers__link-box">
+                        <a class="offers__link" href="#">How to pay anonymously</a>
+                        <a class="offers__link" href="#">REDEEM GIFT CARD</a>
+                    </div>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="footer">
+      <footer class="footer">
         <div class="container">
             <a class="footer__logo-link" href="#">
                 <img class="logo" src="images/logo.svg" alt="Logo">
@@ -701,7 +705,7 @@
             </div>
         </div>
     </footer>
-
+ 
 
 
     <script src="js/main.min.js"></script>

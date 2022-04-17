@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="body">
+    <div class="warning" id="warning">
+        <div class="warning__inner">
+            <div class="empty"></div>
+
+            <div class="warning__main">
+                <p class="warning__item warning--msg">You are not protected</p>
+                <p class="warning__item warning--text">
+                    Your IP Address: <span class="warning__ip">107.3.176.194</span>
+                </p>
+                <p class="warning__item warning--text">Your ISP: <span class="warning__isp">Comcast Cable</span></p>
+                <a class="warning__item warning--link" href="#">Learn More › </a>
+            </div>
+
+            <div class="warning__close" onclick="closeWarning()">
+                <span></span>
+            </div>
+        </div>
+    </div>
+     <header class="header">
+        <div class="big-container">
+            <div class="header__inner">
+                <img class="burger-menu" onclick="openMenu()" src="images/Icons/burger.svg" alt="menu">
+                <a class="header__logo-link" href="#">
+                    <img class="logo" src="images/logo.svg" alt="Logo">
+                </a>
+
+                <nav class="menu" id="menu">
+                    <div class="menu__dropdown">
+                        <a class="menu__dropdown-btn" href="https://html5css.ru/edithtm/index.php" target="_blank">WHY Us</a>
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">Lorem</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">Lorem ldfs</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">Lorem</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">Lorem</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">Lorem</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu__dropdown ">
+                        <a class="menu__dropdown-btn menu__nonDropdown" href="#">VPN APPS</a>
+                    </div>
+
+                    <div class="menu__dropdown">
+                        <a class="menu__dropdown-btn" href="#">SUPPORT</a>
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">Lorem</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">Lorem</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">losdfsdsfsdfdrsdfsdfsdfsd</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">Lorem</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">Lorem</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="menu__dropdown">
+                        <a class="menu__dropdown-btn" href="#">Resources</a>
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">Lorem</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">Lorem</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">Lorem</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">Lorem</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">Lorem</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="log-box">
+                    <button class="btn btn-log">Log in</button>
+                    <button class="btn btn-reg">GET STARTED</button>
+                </div>
+            </div>
+
+        </div>
+    </header> 
+
+    <main class="main">
+        <section class="news">
+            <div class="container">
+                <div class="news__inner">
+                    <img class="news__img" src="images/news-img.webp" alt="News Image">
+
+                    <div class="news__box">
+                        <h3 class="news__title">
+                            TV Addons: Legal battle against Canadian media giants demonstrates severe consequences
+                            facing developers accused of copyright infringement
+                        </h3>
+
+                        <div class="news__info">
+                            <div class="news__info-nameDate">
+                                <p class="news__info-name">
+                                    Danica Sergison
+                                </p>
+                                <div class="news__info-date">
+                                    JUL 08, 2018
+                                </div>
+                            </div>
+
+                            <div class="news__info-tags">
+                                <a class="news__info-tags__link" href="#">copyright,</a>
+                                <a class="news__info-tags__link" href="#">news,</a>
+                                <a class="news__info-tags__link" href="#">open source,</a>
+                                <a class="news__info-tags__link" href="#">privacy</a>
+                            </div>
+
+                            <div class="news__info-comments">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <div class="tags">
+            <div class="container">
+                <div class="tags__inner">
+                    <div class="tags__box">
+                        <div class="tags__title">tags:</div>
+                        <ul class="tags-list">
+                            <li class="tags-list__item">
+                                <a class="tags-list__link" href="#">bitcoin</a>
+                            </li>
+                            <li class="tags-list__item">
+                                <a class="tags-list__link" href="#">bittorent</a>
+                            </li>
+                            <li class="tags-list__item">
+                                <a class="tags-list__link" href="#">irc</a>
+                            </li>
+                            <li class="tags-list__item">
+                                <a class="tags-list__link" href="#">news</a>
+                            </li>
+                            <li class="tags-list__item">
+                                <a class="tags-list__link" href="#">privacy</a>
+                            </li>
+                            <li class="tags-list__item">
+                                <a class="tags-list__link" href="#">programming</a>
+                            </li>
+                            <li class="tags-list__item">
+                                <a class="tags-list__link" href="#">security</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tags__contact">
+                        <a class="tags__contact-link" href="#">team</a>
+                        <a class="tags__contact-link" href="#">contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="entries">
+            <div class="container">
+                <div class="entries__inner">
+                    <div class="entries__left">
+
+                        <h3 class="entries__title">Recent posts</h3>
+
+                        <div class="entries__box">
+                            <div class="entries__post">
+                                <img class="entries__img" src="images/post-img1.webp" alt="post img">
+
+                                <div class="entries__post-info">
+                                    <h3 class="entries__post-title">
+                                        The Internet Cannot be Trusted – Beamsplitters, Backdoors, and Broken Promises
+                                    </h3>
+
+                                    <div class="entries__post-text">
+                                        <div class="entries__post-nameDate">
+                                            <p class="entries__post-name">
+                                                Derek Zimmer
+                                            </p>
+                                            <div class="entries__post-date">
+                                                JUL 08, 2018
+                                            </div>
+                                        </div>
+                                        <div class="entries__post-tags">
+                                            <a class="news__info-tags__link" href="#">copyright,</a>
+                                            <a class="news__info-tags__link" href="#">news,</a>
+                                            <a class="news__info-tags__link" href="#">open source,</a>
+                                            <a class="news__info-tags__link" href="#">privacy</a>
+                                        </div>
+                                        <div class="entries__post-comments">0</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entries__post">
+                                <img class="entries__img" src="images/post-img2.webp" alt="post img">
+
+                                <div class="entries__post-info">
+                                    <h3 class="entries__post-title">
+                                        How to get cheaper flights using a VPN
+                                    </h3>
+
+                                    <div class="entries__post-text">
+                                        <div class="entries__post-nameDate">
+                                            <p class="entries__post-name">
+                                                Jayson
+                                            </p>
+                                            <div class="entries__post-date">
+                                                JUL 08, 2018
+                                            </div>
+                                        </div>
+                                        <div class="entries__post-tags">
+                                            <a class="news__info-tags__link" href="#">copyright,</a>
+                                            <a class="news__info-tags__link" href="#">news,</a>
+                                            <a class="news__info-tags__link" href="#">open source,</a>
+                                            <a class="news__info-tags__link" href="#">privacy</a>
+                                        </div>
+                                        <div class="entries__post-comments">0</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entries__post">
+                                <img class="entries__img" src="images/post-img3.webp" alt="post img">
+
+                                <div class="entries__post-info">
+                                    <h3 class="entries__post-title">
+                                        How to get cheaper flights using a VPN
+                                    </h3>
+
+                                    <div class="entries__post-text">
+                                        <div class="entries__post-nameDate">
+                                            <p class="entries__post-name">
+                                                Jayson
+                                            </p>
+                                            <div class="entries__post-date">
+                                                JUL 08, 2018
+                                            </div>
+                                        </div>
+                                        <div class="entries__post-tags">
+                                            <a class="news__info-tags__link" href="#">copyright,</a>
+                                            <a class="news__info-tags__link" href="#">news,</a>
+                                            <a class="news__info-tags__link" href="#">open source,</a>
+                                            <a class="news__info-tags__link" href="#">privacy</a>
+                                        </div>
+                                        <div class="entries__post-comments">0</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entries__post">
+                                <img class="entries__img" src="images/post-img1.webp" alt="post img">
+
+                                <div class="entries__post-info">
+                                    <h3 class="entries__post-title">
+                                        How to get cheaper flights using a VPN
+                                    </h3>
+
+                                    <div class="entries__post-text">
+                                        <div class="entries__post-nameDate">
+                                            <p class="entries__post-name">
+                                                Jayson
+                                            </p>
+                                            <div class="entries__post-date">
+                                                JUL 08, 2018
+                                            </div>
+                                        </div>
+                                        <div class="entries__post-tags">
+                                            <a class="news__info-tags__link" href="#">copyright,</a>
+                                            <a class="news__info-tags__link" href="#">news,</a>
+                                            <a class="news__info-tags__link" href="#">open source,</a>
+                                            <a class="news__info-tags__link" href="#">privacy</a>
+                                        </div>
+                                        <div class="entries__post-comments">0</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entries__post">
+                                <img class="entries__img" src="images/post-img2.webp" alt="post img">
+
+                                <div class="entries__post-info">
+                                    <h3 class="entries__post-title">
+                                        How to get cheaper flights using a VPN
+                                    </h3>
+
+                                    <div class="entries__post-text">
+                                        <div class="entries__post-nameDate">
+                                            <p class="entries__post-name">
+                                                Jayson
+                                            </p>
+                                            <div class="entries__post-date">
+                                                JUL 08, 2018
+                                            </div>
+                                        </div>
+                                        <div class="entries__post-tags">
+                                            <a class="news__info-tags__link" href="#">copyright,</a>
+                                            <a class="news__info-tags__link" href="#">news,</a>
+                                            <a class="news__info-tags__link" href="#">open source,</a>
+                                            <a class="news__info-tags__link" href="#">privacy</a>
+                                        </div>
+                                        <div class="entries__post-comments">0</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entries__post">
+                                <img class="entries__img" src="images/post-img3.webp" alt="post img">
+
+                                <div class="entries__post-info">
+                                    <h3 class="entries__post-title">
+                                        How to get cheaper flights using a VPN
+                                    </h3>
+
+                                    <div class="entries__post-text">
+                                        <div class="entries__post-nameDate">
+                                            <p class="entries__post-name">
+                                                Jayson
+                                            </p>
+                                            <div class="entries__post-date">
+                                                JUL 08, 2018
+                                            </div>
+                                        </div>
+                                        <div class="entries__post-tags">
+                                            <a class="news__info-tags__link" href="#">copyright,</a>
+                                            <a class="news__info-tags__link" href="#">news,</a>
+                                            <a class="news__info-tags__link" href="#">open source,</a>
+                                            <a class="news__info-tags__link" href="#">privacy</a>
+                                        </div>
+                                        <div class="entries__post-comments">0</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a class="entries__btn btn" href="#">older posts</a>
+                    </div>
+
+
+
+
+                    <article class="sidebar">
+                        <input class="search" type="text" placeholder="Search blog">
+
+                        <div class="sidebar__box">
+                            <h3 class="sidebar__box-title sidebar__box-title--bell">Announcements</h3>
+
+                            <ul class="sidebar__box-list">
+                                <li class="sidebar__box-list__item">
+                                    Upcoming Changes (Live Chat, Less Censorship, More Access)
+                                </li>
+                                <li class="sidebar__box-list__item">
+                                    New Servers (US Washington DC)
+                                </li>
+                                <li class="sidebar__box-list__item">
+                                    New Servers (US Denver)
+                                </li>
+                                <li class="sidebar__box-list__item">
+                                    Open Source: Releasing the PIA iOS Client
+                                </li>
+                                <li class="sidebar__box-list__item">
+                                    Opera Extension is now available
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar__box">
+                            <h3 class="sidebar__box-title sidebar__box-title--wifi">Popular posts</h3>
+
+                            <ul class="sidebar__box-list">
+                                <li class="sidebar__box-list__item">
+                                    <a class="sidebar__box-list__link" href="#">
+                                        The Gift of Privacy
+                                    </a>
+                                </li>
+                                <li class="sidebar__box-list__item">
+                                    <a class="sidebar__box-list__link" href="#">
+                                        UK High Court Censors Many Links To Popcorn Time: Useless, Dangerous Gesture
+                                    </a>
+                                </li>
+                                <li class="sidebar__box-list__item">
+                                    <a class="sidebar__box-list__link" href="#">
+                                        About the PIA Client Security and VPN Security in General
+                                    </a>
+                                </li>
+                                <li class="sidebar__box-list__item">
+                                    <a class="sidebar__box-list__link" href="#">
+                                        A Private Net Is Just As Fundamental A Right As Freedom Of Speech
+                                    </a>
+                                </li>
+                                <li class="sidebar__box-list__item">
+                                    <a class="sidebar__box-list__link" href="#">
+                                        Wiretapping Today Just Doesn’t Mean What The Word Meant In The 1990s, So Don’t
+                                        Fall For That Lie
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="ad-link" href="#">
+                            <img class="ad-link__img" src="images/ad.webp" alt="Ad">
+                        </a>
+                        <div class="tagCloud" id="tagCloud">
+                            <h3 class="sidebar__box-title sidebar__box-title--cloud">Tag cloud</h3>
+                            <div class="tagCloud__inner">
+                                <a class="tagCloud__link" href="#" rel="2">Lorem.</a>
+                                <a class="tagCloud__link" href="#" rel="6">Lorem, ipsum dolor.</a>
+                                <a class="tagCloud__link" href="#" rel="1">Lorem, ipsum.</a>
+                                <a class="tagCloud__link" href="#" rel="1">Lorem ipsum dolor sit.</a>
+                                <a class="tagCloud__link" href="#" rel="2">Lorem.</a>
+                                <a class="tagCloud__link" href="#" rel="5">Lorem, ipsum dolor.</a>
+                                <a class="tagCloud__link" href="#" rel="1">Lorem, ipsum.</a>
+                                <a class="tagCloud__link" href="#" rel="1">Lorem ipsum dolor sit.</a>
+                                <a class="tagCloud__link" href="#" rel="1">Lorem.</a>
+                                <a class="tagCloud__link" href="#" rel="1">Lorem, ipsum dolor.</a>
+                                <a class="tagCloud__link" href="#" rel="1">Lorem, ipsum.</a>
+                                <a class="tagCloud__link" href="#" rel="1">Lorem ipsum dolor sit.</a>
+                                <a class="tagCloud__link" href="#" rel="2">Lorem.</a>
+                                <a class="tagCloud__link" href="#" rel="1">Lorem, ipsum dolor.</a>
+                                <a class="tagCloud__link" href="#" rel="1">Lorem, ipsum.</a>
+                                <a class="tagCloud__link" href="#" rel="6">Lorem ipsum dolor sit.</a>
+                                <a class="tagCloud__link" href="#" rel="3">Lorem.</a>
+                                <a class="tagCloud__link" href="#" rel="3">Lorem, ipsum dolor.</a>
+                                <a class="tagCloud__link" href="#" rel="2">Lorem, ipsum.</a>
+                                <a class="tagCloud__link" href="#" rel="1">Lorem ipsum dolor sit.</a>
+                                <a class="tagCloud__link" href="#" rel="2">Lorem.</a>
+                                <a class="tagCloud__link" href="#" rel="3">Lorem, ipsum dolor.</a>
+                                <a class="tagCloud__link" href="#" rel="1">Lorem, ipsum.</a>
+                                <a class="tagCloud__link" href="#" rel="9">Lorem ipsum dolor sit.</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+      <section class="offers">
+            <div class="container">
+                <div class="offers__inner">
+                    <h2 class="offers__title">Sign up today – 7 day money back guarantee</h2>
+
+                    <div class="offers__content">
+                        <div class="offers__box">
+                            <div class="offers__box-duration">MONTHLY</div>
+                            <div class="offers__box-cost">6.95 <span>/mo.</span></div>
+                            <div class="offers__box-price">
+                                <div class="offers__box-price__item offers__box-price--benefit">Includes all VPN
+                                    features.</div>
+                            </div>
+                            <a class="btn offers--btn" href="#">sign up</a>
+                        </div>
+
+                        <div class="offers__box">
+                            <div class="offers__box-duration">two years</div>
+                            <div class="offers__box-cost">2.91 <span>/mo.</span></div>
+                            <div class="offers__box-price">
+                                <div class="offers__box-price__item offers__box-price--old">$166.80</div>
+                                <div class="offers__box-price__item offers__box-price--new"><span>$69.95</span> per two
+                                    years</div>
+                                <div class="offers__box-price__item offers__box-price--benefit">Save <span>58%</span>*
+                                </div>
+                            </div>
+                            <a class="btn offers--btn" href="#">sign up</a>
+                        </div>
+                        <div class="offers__box">
+                            <div class="offers__box-duration">yearly</div>
+                            <div class="offers__box-cost">3.33 <span>/mo.</span></div>
+                            <div class="offers__box-price">
+                                <div class="offers__box-price__item offers__box-price--old">$166.80</div>
+                                <div class="offers__box-price__item offers__box-price--new"><span>$39.95</span> per year
+                                </div>
+                                <div class="offers__box-price__item offers__box-price--benefit">Save <span>58%</span>*
+                                </div>
+                            </div>
+                            <a class="btn offers--btn" href="#">sign up</a>
+                        </div>
+                    </div>
+                    <div class="payment">
+                        <div class="payment__title">Ways to pay:</div>
+                        <div class="payment__box">
+                            <img class="payment__img" src="images/Icons/visa.webp" alt="Payment logo">
+                            <img class="payment__img" src="images/Icons/mastercard.webp" alt="Payment logo">
+                            <img class="payment__img" src="images/Icons/americanEx.webp" alt="Payment logo">
+                            <img class="payment__img" src="images/Icons/pay_pal.webp" alt="Payment logo">
+                            <img class="payment__img" src="images/Icons/Bitcoin.webp" alt="Payment logo">
+                            <img class="payment__img" src="images/Icons/OKPay.webp" alt="Payment logo">
+                            <img class="payment__img" src="images/Icons/Amazon-Pay-logo.webp" alt="Payment logo">
+                        </div>
+                    </div>
+                    <div class="offers__link-box">
+                        <a class="offers__link" href="#">How to pay anonymously</a>
+                        <a class="offers__link" href="#">REDEEM GIFT CARD</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+      <footer class="footer">
+        <div class="container">
+            <a class="footer__logo-link" href="#">
+                <img class="logo" src="images/logo.svg" alt="Logo">
+            </a>
+            <div class="footer__inner">
+                <div class="footer__box">
+                    <ul class="footer__list">
+                        <div class="footer__list-title">Company</div>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Our Team
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Careers
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Press
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                In the Media
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                VPN Reviews
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Companies We Support
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__box">
+                    <ul class="footer__list">
+                        <div class="footer__list-title">programs</div>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Whitehat Security
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Affiliates
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <div class="footer__list-title">learn more</div>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                VPN Encryption
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Android VPN App
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                iOS VPN App
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                PIA Sitemap
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__box">
+                    <ul class="footer__list">
+                        <div class="footer__list-title">LEGAL</div>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Terms Of Service
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                DMCA Policy
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">
+                                Export Control Policy
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__box footer__box--about">
+                    <div class="footer__box-about">
+                        <div class="footer__list-title">About</div>
+                        <div class="footer__box-text footer__box-text--descr">
+                            Private Internet Access is the leading VPN Service provider specializing in secure,
+                            encrypted VPN tunnels which create several layers of privacy and security providing you
+                            safety on the internet. Our service is backed by multiple gateways worldwide with access in
+                            28+ countries, 44+ regions.
+                        </div>
+                        <div class="footer__box-text footer__box-text--map">
+                            Map data provided by Google.
+                        </div>
+                        <div class="footer__box-text">
+                            PC Mag Editor’s Choice award image reprinted with permission. © 2012 Ziff Davis, Inc. All
+                            Rights Reserved.<br>
+                            PC Mag quote reprinted from www.pcmag.com with permission. © 2012 Ziff Davis, Inc. All
+                            Rights Reserved.
+                        </div>
+                        <div class="footer__box-text footer__box-text--copy">
+                            © London Trust Media, Inc. All Rights Reserved.
+                        </div>
+                    </div>
+                    <div class="footer__social">
+                        <div class="footer__list-title">Social</div>
+                        <ul class="footer__social-list">
+                            <li class="footer__social-list__item">
+                                <a class="footer__social-list__link" href="#">
+                                    <img class="footer__social-list__img" src="images/Icons/facebook.svg" alt="Social img">
+                                </a>
+                            </li>
+                            <li class="footer__social-list__item">
+                                <a class="footer__social-list__link" href="#">
+                                    <img class="footer__social-list__img" src="images/Icons/twitter.svg" alt="Social img">
+                                </a>
+                            </li>
+                            <li class="footer__social-list__item">
+                                <a class="footer__social-list__link" href="#">
+                                    <img class="footer__social-list__img" src="images/Icons/g+.svg" alt="Social img">
+                                </a>
+                            </li>
+                            <li class="footer__social-list__item">
+                                <a class="footer__social-list__link" href="#">
+                                    <img class="footer__social-list__img" src="images/Icons/lIn.svg" alt="Social img">
+                                </a>
+                            </li>
+                            <li class="footer__social-list__item">
+                                <a class="footer__social-list__link" href="#">
+                                    <img class="footer__social-list__img" src="images/Icons/git.svg" alt="Social img">
+                                </a>
+                            </li>
+                            <li class="footer__social-list__item">
+                                <a class="footer__social-list__link" href="#">
+                                    <img class="footer__social-list__img" src="images/Icons/yout.svg" alt="Social img">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+ 
+
+
+    <script src="js/main.min.js"></script>
+    <script src="js/jquery.tagcloud.js"></script>
+</body>
+
+</html>

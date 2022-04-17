@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12.188" height="12.125" viewBox="0 0 12.188 12.125">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #889099;
+        stroke-width: 1.5px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Comment_2" class="cls-1" d="M875.667,503.666h-9.334a0.705,0.705,0,0,0-.666.714V511.7a0.637,0.637,0,0,0,.666.635H867v1.584c0,0.376.269,0.439,0.6,0.277l3.586-1.861h4.48a0.637,0.637,0,0,0,.666-0.635V504.38A0.705,0.705,0,0,0,875.667,503.666Z" transform="translate(-864.906 -502.906)"/>
+</svg>
